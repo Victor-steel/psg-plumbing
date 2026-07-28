@@ -17,12 +17,12 @@ const app = new Hono();
 app.use("*", cors({ origin: "*" }));
 
 app.get("/health", (c) =>
-  c.json({ ok: true, service: "psg-plumbing", business: "PSG Plumbing" }),
+  c.json({ ok: true, service: "psg-plumbing", business: "PSG Plumbing & Heating" }),
 );
 
 app.get("/api/config", (c) =>
   c.json({
-    businessName: "PSG Plumbing",
+    businessName: "PSG Plumbing & Heating",
     phone: process.env.BUSINESS_PHONE?.trim() || "",
     email: process.env.BUSINESS_EMAIL?.trim() || "Psgheatingplumb@outlook.com",
     area: "Cumbria",
