@@ -26,6 +26,8 @@ app.get("/api/config", (c) =>
     phone: process.env.BUSINESS_PHONE?.trim() || "",
     email: process.env.BUSINESS_EMAIL?.trim() || "Psgheatingplumb@outlook.com",
     area: "Cumbria",
+    hours: "Monday–Friday, 8am–5pm",
+    facebookUrl: process.env.FACEBOOK_URL?.trim() || "",
   }),
 );
 

@@ -117,7 +117,7 @@ body {
   border: 1px solid var(--line);
 }
 
-.services, .about, .contact {
+.services, .about, .reviews, .contact {
   padding: 28px clamp(28px, 5vw, 72px) 72px;
   border-top: 1px solid color-mix(in srgb, var(--line) 85%, transparent);
 }

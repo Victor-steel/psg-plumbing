@@ -13,6 +13,12 @@
         navPhone.href = `tel:${data.phone.replace(/\s/g, "")}`;
         navPhone.textContent = data.phone;
       }
+      const fb = document.getElementById("facebook-reviews");
+      if (fb && data.facebookUrl) {
+        fb.href = data.facebookUrl;
+      } else if (fb && !data.facebookUrl) {
+        fb.hidden = true;
+      }
     } catch {
       // keep placeholders
     }
