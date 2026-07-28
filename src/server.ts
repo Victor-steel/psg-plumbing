@@ -24,7 +24,7 @@ app.get("/api/config", (c) =>
   c.json({
     businessName: "PSG Plumbing",
     phone: process.env.BUSINESS_PHONE?.trim() || "",
-    email: process.env.BUSINESS_EMAIL?.trim() || "",
+    email: process.env.BUSINESS_EMAIL?.trim() || "Psgheatingplumb@outlook.com",
     area: "Cumbria",
   }),
 );
